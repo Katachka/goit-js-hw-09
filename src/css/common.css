@@ -16,12 +16,13 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* task 02 */
 .timer {
   display: flex;
   padding-top: 20px;
   gap: 30px;
-  /* width: 300px;
-  background-color: rgb(29, 193, 225); */
+  width: 300px;
 }
 .field {
   display: flex;
@@ -36,17 +37,21 @@ img {
   font-size: 12px;
 }
 #datetime-picker {
-  margin-right: 20px;
+  margin-right: 10px;
   text-align: center;
   width: 200px;
   height: 40px;
-
   font-size: 18px;
-  /* border-radius: 5px; */
-  /* border: none; */
-  /* color: #3d3a3a;
-
-  background-color: #8dee0f; */
-
   transition: 250ms;
+}
+
+[data-start] {
+  width: 90px;
+  height: 40px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+[data-start]:disabled {
+  cursor: not-allowed;
 }
