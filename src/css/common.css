@@ -53,6 +53,3 @@ img {
   text-align: center;
   cursor: pointer;
 }
-[data-start]:disabled {
-  cursor: not-allowed;
-}
