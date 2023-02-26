@@ -36,5 +36,8 @@ class ColorSwitcher {
 }
 const colorSwitcher = new ColorSwitcher();
 
-refs.startBtn.addEventListener('click', colorSwitcher.start());
-refs.stopBtn.addEventListener('click', colorSwitcher.stop());
+refs.startBtn.addEventListener(
+  'click',
+  colorSwitcher.start.bind(colorSwitcher)
+);
+refs.stopBtn.addEventListener('click', colorSwitcher.stop.bind(colorSwitcher));
