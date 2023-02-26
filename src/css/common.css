@@ -45,7 +45,8 @@ img {
   transition: 250ms;
 }
 
-[data-start] {
+[data-start],
+[data-stop] {
   width: 90px;
   height: 40px;
   font-size: 18px;
